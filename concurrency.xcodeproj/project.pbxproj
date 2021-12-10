@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		9B212ECB2761874D004B33CF /* concurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B212ECA2761874D004B33CF /* concurrencyApp.swift */; };
-		9B212ECD2761874D004B33CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B212ECC2761874D004B33CF /* ContentView.swift */; };
+		9B212ECD2761874D004B33CF /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B212ECC2761874D004B33CF /* UsersListView.swift */; };
 		9B212ECF2761874F004B33CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B212ECE2761874F004B33CF /* Assets.xcassets */; };
 		9B212ED22761874F004B33CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B212ED12761874F004B33CF /* Preview Assets.xcassets */; };
+		9B212ED9276187BE004B33CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B212ED8276187BE004B33CF /* User.swift */; };
+		9B212EDB27623C09004B33CF /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B212EDA27623C09004B33CF /* Posts.swift */; };
+		9B212EDF27623D38004B33CF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B212EDE27623D38004B33CF /* APIService.swift */; };
+		9B212EE32762E758004B33CF /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B212EE22762E758004B33CF /* UsersListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9B212EC72761874D004B33CF /* concurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = concurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B212ECA2761874D004B33CF /* concurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = concurrencyApp.swift; sourceTree = "<group>"; };
-		9B212ECC2761874D004B33CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9B212ECC2761874D004B33CF /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		9B212ECE2761874F004B33CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B212ED12761874F004B33CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9B212ED8276187BE004B33CF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9B212EDA27623C09004B33CF /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		9B212EDE27623D38004B33CF /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		9B212EE22762E758004B33CF /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,11 @@
 		9B212EC92761874D004B33CF /* concurrency */ = {
 			isa = PBXGroup;
 			children = (
+				9B212EDD27623D23004B33CF /* Models */,
+				9B212EE02762E72B004B33CF /* Views */,
+				9B212EE12762E74C004B33CF /* ViewModels */,
+				9B212EDC27623D1A004B33CF /* Services */,
 				9B212ECA2761874D004B33CF /* concurrencyApp.swift */,
-				9B212ECC2761874D004B33CF /* ContentView.swift */,
 				9B212ECE2761874F004B33CF /* Assets.xcassets */,
 				9B212ED02761874F004B33CF /* Preview Content */,
 			);
@@ -65,6 +76,39 @@
 				9B212ED12761874F004B33CF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9B212EDC27623D1A004B33CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9B212EDE27623D38004B33CF /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9B212EDD27623D23004B33CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B212ED8276187BE004B33CF /* User.swift */,
+				9B212EDA27623C09004B33CF /* Posts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9B212EE02762E72B004B33CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B212ECC2761874D004B33CF /* UsersListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B212EE12762E74C004B33CF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9B212EE22762E758004B33CF /* UsersListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B212ECD2761874D004B33CF /* ContentView.swift in Sources */,
+				9B212ECD2761874D004B33CF /* UsersListView.swift in Sources */,
+				9B212EE32762E758004B33CF /* UsersListViewModel.swift in Sources */,
+				9B212EDF27623D38004B33CF /* APIService.swift in Sources */,
 				9B212ECB2761874D004B33CF /* concurrencyApp.swift in Sources */,
+				9B212ED9276187BE004B33CF /* User.swift in Sources */,
+				9B212EDB27623C09004B33CF /* Posts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

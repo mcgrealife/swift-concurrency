@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+// UsersListView.swift
 //  concurrency
 //
 //  Created by Michael McGreal on 12/8/21.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct UsersListView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct UsersListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        UsersListView()
     }
 }
