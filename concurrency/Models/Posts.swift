@@ -4,7 +4,7 @@
 import Foundation
 
 struct Post: Codable, Identifiable {
-  let userID: Int
+  let userId: Int
   let id: Int
   let title: String
   let body: String
